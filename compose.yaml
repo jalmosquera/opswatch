@@ -1,0 +1,8 @@
+#compose.yaml sirve para describir qué contenedores forman la aplicación y cómo se levantan juntos.
+services:
+# * services: → lista de servicios/contenedores que Compose gestionará.
+# * opswatch: → nombre lógico de nuestro primer servicio.
+  opswatch:
+    #Para construir el contenedor de opswatch, usa como contexto de construcción el directorio actual (.).
+    build: .
+    container_name: opswatch
